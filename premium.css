@@ -570,6 +570,11 @@ h4 {
 }
 
 @media (max-width: 768px) {
+    .hero-premium {
+        background-attachment: scroll; /* Corrige bug de zoom no iOS e navegadores mobile */
+        background-position: center right; /* Foca melhor na área da comida/pizza */
+    }
+
     h1 { font-size: 2.8rem; }
     h2 { font-size: 2.2rem; }
 
