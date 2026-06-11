@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurante da Fazenda Itatiba</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header class="header">
+        <div class="container header-content">
+            <div class="logo-container">
+                <img src="assets/logo.jpg" alt="Restaurante da Fazenda & Pizzaria" class="logo" onerror="this.src='https://placehold.co/200x80/5c2c16/FFF?text=Restaurante+da+Fazenda'">
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#almoco">Almoço</a></li>
+                    <li><a href="#jantar">Jantar & Pizza</a></li>
+                    <li><a href="#sobremesas">Sobremesas</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+            <div class="header-action">
+                <a href="https://wa.me/5511940775084" class="btn-whatsapp-header" target="_blank">
+                    <i class="fab fa-whatsapp"></i> 11 94077-5084
+                </a>
+            </div>
+            <button class="mobile-menu-btn"><i class="fas fa-bars"></i></button>
+        </div>
+    </header>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/5511940775084" class="floating-whatsapp" target="_blank" aria-label="Fale conosco no WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-overlay"></div>
+        <div class="container hero-content fade-in-up">
+            <h1>O Sabor Autêntico da Fazenda, Todos os Dias em Itatiba.</h1>
+            <p>Do farto buffet caipira no almoço ao irresistível rodízio de pizza no jantar. Ambiente aconchegante para toda a família.</p>
+            <a href="#reserva" class="btn-primary btn-large">QUERO MINHA MESA</a>
+        </div>
+    </section>
+
+    <!-- Almoço Section -->
+    <section id="almoco" class="lunch-section">
+        <div class="container lunch-grid">
+            
+            <div class="lunch-visuals slide-in-left">
+                <div class="main-image-container">
+                    <!-- Placeholder for the complex composition -->
+                    <img src="assets/lunch_composition.jpg" alt="Buffet completo de almoço" class="main-lunch-image" onerror="this.src='https://placehold.co/600x800/d9cbb8/5c2c16?text=Composicao+Buffet'">
+                </div>
+                <div class="lunch-gallery">
+                    <img src="assets/lunch_dish.jpg" alt="Prato caipira" onerror="this.src='https://placehold.co/200x200/d9cbb8/5c2c16?text=Prato'">
+                    <img src="assets/lunch_feijoada.jpg" alt="Arroz e feijoada" onerror="this.src='https://placehold.co/200x200/d9cbb8/5c2c16?text=Feijoada'">
+                    <img src="assets/lunch_desserts.jpg" alt="Sobremesas" onerror="this.src='https://placehold.co/200x200/d9cbb8/5c2c16?text=Sobremesas'">
+                </div>
+            </div>
+
+            <div class="lunch-text slide-in-right">
+                <h2>Almoço Caipira e Buffet Completo</h2>
+                <p class="description">Tem gente que começa pela carne. Tem quem vai direto nas saladas. E tem quem já pensa na sobremesa antes de tudo. Aqui, cada um monta o prato do seu jeito e sempre sai satisfeito. Vem almoçar com a gente.</p>
+                
+                <div class="highlights">
+                    <div class="highlight-item">
+                        <div class="icon-wrapper"><i class="fas fa-fire"></i></div>
+                        <span>Mais de 40 opções quentes</span>
+                    </div>
+                    <div class="highlight-item">
+                        <div class="icon-wrapper"><i class="fas fa-leaf"></i></div>
+                        <span>Farto buffet de saladas</span>
+                    </div>
+                    <div class="highlight-item" id="sobremesas">
+                        <div class="icon-wrapper"><i class="fas fa-birthday-cake"></i></div>
+                        <span>Sobremesas à vontade</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Jantar Section -->
+    <section id="jantar" class="dinner-section">
+        <div class="dinner-overlay"></div>
+        <div class="container dinner-content">
+            <div class="dinner-text fade-in-up">
+                <h2>Jantar: Rodízio de Pizza Diário</h2>
+                <p>Finalizar o dia com rodízio de pizza é sempre uma ótima ideia. 🍕 Aqui no Restaurante da Fazenda são muitos sabores, entre pizzas salgadas e doces, servidos todos os dias no jantar após às 18h. Reúna a família, chame os amigos e venha aproveitar!</p>
+            </div>
+            <div class="dinner-promo scale-in">
+                <div class="promo-card">
+                    <div class="promo-bow"><i class="fas fa-gift"></i></div>
+                    <h3>Promoção Especial</h3>
+                    <p>Aniversariante do dia não paga o rodízio trazendo 10 adultos pagantes!</p>
+                    <a href="https://wa.me/5511940775084" class="btn-primary" target="_blank">RESERVAR AGORA</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer id="contato" class="footer">
+        <div class="container footer-grid">
+            
+            <div class="footer-location slide-in-bottom">
+                <div class="map-container">
+                    <iframe width="100%" height="200" style="border:0; border-radius: 8px; margin-bottom: 1rem; box-shadow: 0 4px 10px rgba(0,0,0,0.2);" loading="lazy" allowfullscreen src="https://maps.google.com/maps?q=Avenida%20Marechal%20Castelo%20Branco,%20760,%20Itatiba&t=&z=15&ie=UTF8&iwloc=&output=embed"></iframe>
+                </div>
+                <div class="address">
+                    <i class="fas fa-map-pin"></i>
+                    <p>Avenida Marechal Castelo Branco, 760<br>Itatiba - SP, 13255-350</p>
+                </div>
+            </div>
+
+            <div class="footer-contact slide-in-bottom delay-1">
+                <img src="assets/logo.jpg" alt="Logo" class="footer-logo" onerror="this.src='https://placehold.co/150x60/3d1c0c/FFF?text=Logo'">
+                <div class="contact-links">
+                    <a href="tel:+551145241817"><i class="fas fa-phone"></i> Reserva: 11 4524-1817</a>
+                    <a href="https://wa.me/5511940775084" target="_blank"><i class="fab fa-whatsapp"></i> 11 94077-5084</a>
+                </div>
+            </div>
+
+            <div class="footer-social slide-in-bottom delay-2">
+                <h3>Siga-nos</h3>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/restaurante.da.fazenda/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Restaurante da Fazenda Itatiba. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

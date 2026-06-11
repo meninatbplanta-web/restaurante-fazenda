@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurante da Fazenda Itatiba - Premium</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="premium.css">
+</head>
+<body>
+
+    <!-- 1. Header (Cabeçalho Fixo e Transparente) -->
+    <header class="header-premium" id="mainHeader">
+        <div class="container header-content">
+            <div class="logo-container">
+                <a href="#" class="logo-text">Restaurante da Fazenda</a>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#essencia">A Fazenda</a></li>
+                    <li><a href="#destaques">Almoço Caipira</a></li>
+                    <li><a href="#destaques">Rodízio de Pizza</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+            <div class="header-action">
+                <a href="https://wa.me/5511940775084" class="btn-cta-header" target="_blank">
+                    Reservar Mesa
+                </a>
+            </div>
+            <button class="mobile-menu-btn"><i class="fas fa-bars"></i></button>
+        </div>
+    </header>
+
+    <!-- 2. Hero Section -->
+    <section class="hero-premium">
+        <div class="hero-overlay"></div>
+        <div class="container hero-content fade-in-up">
+            <span class="hero-subtitle">UMA EXPERIÊNCIA INESQUECÍVEL</span>
+            <h1>O Sabor Autêntico<br>da Fazenda.</h1>
+            <p>Do farto buffet caipira no almoço ao irresistível rodízio de pizza no jantar. Ambiente aconchegante para toda a família em Itatiba.</p>
+            <div class="hero-buttons">
+                <a href="https://wa.me/5511940775084" class="btn-solid" target="_blank">Faça sua Reserva</a>
+                <a href="#destaques" class="btn-outline">Ver Cardápio</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. Seção "Nossa Essência" -->
+    <section id="essencia" class="essence-section">
+        <div class="essence-split">
+            <div class="essence-image slide-in-left">
+                <!-- Imagem de fogão a lenha/panelas de barro (usando lunch_feijoada.jpg como fallback) -->
+                <div class="img-wrapper">
+                    <img src="assets/lunch_feijoada.jpg" alt="Comida caseira no fogão a lenha" onerror="this.src='https://placehold.co/800x800/2a1f1a/d4c3b3?text=Comida+Caseira'">
+                </div>
+            </div>
+            <div class="essence-text-container slide-in-right">
+                <div class="essence-text">
+                    <h2>Comida caseira,<br>afeto e memória.</h2>
+                    <div class="separator-line"></div>
+                    <p>Tem gente que começa pela carne. Tem quem vai direto nas saladas. E tem quem já pensa na sobremesa antes de tudo. Aqui, cada um monta o prato do seu jeito e sempre sai satisfeito.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. Grid de Destaques (Nossas Especialidades) -->
+    <section id="destaques" class="highlights-section">
+        <div class="container">
+            <div class="highlights-grid">
+                <div class="highlight-card fade-in-up delay-1">
+                    <div class="highlight-icon"><i class="fas fa-fire-burner"></i></div>
+                    <h3>Almoço Caipira</h3>
+                    <p>Farto buffet de saladas frescas, pratos quentes no fogão a lenha e sobremesas à vontade para adoçar o dia.</p>
+                </div>
+                <div class="highlight-card fade-in-up delay-2">
+                    <div class="highlight-icon"><i class="fas fa-pizza-slice"></i></div>
+                    <h3>Rodízio de Pizzas</h3>
+                    <p>Finalize o seu dia com nosso rodízio completo de pizzas doces e salgadas, servido todos os dias a partir das 18h.</p>
+                </div>
+                <div class="highlight-card fade-in-up delay-3">
+                    <div class="highlight-icon"><i class="fas fa-wine-glass-empty"></i></div>
+                    <h3>Ambiente Temático</h3>
+                    <p>Uma imersão na cultura da fazenda com instalações rústicas, lustres de palha e um clima perfeito para reunir amigos e família.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. Banner de Promoção -->
+    <section class="promo-banner">
+        <div class="promo-overlay"></div>
+        <div class="container promo-content scale-in">
+            <div class="promo-card-premium">
+                <span class="promo-tag">Promoção de Aniversariante</span>
+                <h2>Celebre conosco!</h2>
+                <p>Aniversariante do dia acompanhado de mais 5 amigos adultos pagantes, ganha o rodízio de presente!</p>
+                <a href="https://wa.me/5511940775084" class="btn-solid btn-large" target="_blank">Garantir meu Presente</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. Seção de Informações e Contato -->
+    <section id="contato" class="info-section">
+        <div class="container info-grid">
+            <div class="info-col slide-in-bottom delay-1">
+                <h4>Localização</h4>
+                <p>Avenida Marechal Castelo Branco, 760<br>Itatiba, SP - 13255-350</p>
+            </div>
+            <div class="info-col slide-in-bottom delay-2">
+                <h4>Funcionamento</h4>
+                <p><strong>Segunda a Sexta:</strong><br>11h às 15h</p>
+                <p><strong>Sábado e Domingo:</strong><br>11:00 às 23:00</p>
+                <p style="margin-top: 1rem; color: var(--color-gold);">✅ Estacionamento grátis</p>
+            </div>
+            <div class="info-col slide-in-bottom delay-3">
+                <h4>Contato</h4>
+                <p><strong>Telefone:</strong><br>(11) 4524-1817</p>
+                <p><strong>WhatsApp:</strong><br><a href="https://wa.me/5511940775084" target="_blank" class="link-hover">(11) 94077-5084</a></p>
+            </div>
+            <div class="info-col slide-in-bottom delay-4">
+                <h4>Acompanhe</h4>
+                <div class="social-links-minimal">
+                    <a href="https://www.instagram.com/restaurante.da.fazenda/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 7. Footer (Rodapé Minimalista) -->
+    <footer class="footer-premium">
+        <div class="container">
+            <p>&copy; 2026 Restaurante da Fazenda Itatiba. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="premium.js"></script>
+</body>
+</html>
