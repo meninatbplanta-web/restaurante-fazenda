@@ -527,78 +527,49 @@ h4 {
     margin-bottom: 0.5rem;
 }
 
-.insta-carousel-container {
-    width: 100%;
-    overflow: hidden;
-    position: relative;
-    padding: 1rem 0;
-}
-
-.insta-carousel {
-    display: flex;
-    gap: 1.5rem;
-    width: max-content;
-    animation: scrollCarousel 25s linear infinite;
-}
-
-.insta-carousel:hover {
-    animation-play-state: paused;
-}
-
-.insta-item {
-    position: relative;
-    width: 300px;
-    height: 300px;
-    flex-shrink: 0;
-    border-radius: 8px;
-    overflow: hidden;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
-}
-
-.insta-item img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: transform 0.5s ease;
-}
-
-.insta-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(138, 61, 40, 0.6); /* Terracota overlay */
+.insta-video-feature {
     display: flex;
     justify-content: center;
-    align-items: center;
-    opacity: 0;
-    transition: opacity 0.3s ease;
-    color: var(--color-white);
-    font-size: 3rem;
+    margin-bottom: 3rem;
 }
 
-.insta-item:hover img {
-    transform: scale(1.1);
+.insta-carousel-container {
+    width: 100%;
+    position: relative;
+    padding: 1rem 0 3rem 0;
 }
 
-.insta-item:hover .insta-overlay {
-    opacity: 1;
+.insta-carousel-scroll {
+    display: flex;
+    gap: 2rem;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    padding: 0 2rem;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: thin;
+    scrollbar-color: var(--color-terracotta) var(--color-charcoal);
 }
 
-@keyframes scrollCarousel {
-    0% { transform: translateX(0); }
-    100% { transform: translateX(calc(-300px * 5 - 1.5rem * 5)); }
+.insta-carousel-scroll::-webkit-scrollbar {
+    height: 8px;
+}
+.insta-carousel-scroll::-webkit-scrollbar-track {
+    background: var(--color-charcoal); 
+}
+.insta-carousel-scroll::-webkit-scrollbar-thumb {
+    background: var(--color-terracotta); 
+    border-radius: 4px;
+}
+
+.insta-embed-item {
+    flex: 0 0 326px; /* Base width for standard insta embed */
+    scroll-snap-align: center;
+    border-radius: 8px;
 }
 
 @media (max-width: 768px) {
-    .insta-item {
-        width: 250px;
-        height: 250px;
-    }
-    @keyframes scrollCarousel {
-        0% { transform: translateX(0); }
-        100% { transform: translateX(calc(-250px * 5 - 1.5rem * 5)); }
+    .insta-embed-item {
+        flex: 0 0 300px;
     }
 }
 
